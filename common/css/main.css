@@ -119,7 +119,7 @@ body {
 }
 
 .courses h2 {
-    text-align: left;
+    text-align: right;
     margin-bottom: 8px;
     font-size: 30px;
 }
@@ -127,7 +127,7 @@ body {
 .courses h1{
     margin-bottom: 20px;
     margin-left: 20px;
-    text-align: left;
+    text-align: right;
     font-size: 18px;
     
 }
@@ -240,6 +240,14 @@ body {
     justify-content: space-around;
     align-items: center;
     gap: 10px;
+}
+
+.teacher-section h2{
+    text-align: left;
+}
+
+.teacher-section h1{
+    text-align: left;
 }
 
 .courses#fourth .teacher-section2{
