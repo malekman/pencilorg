@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات</title>
+    <link rel="stylesheet" href="courses.css">
+
+    <link rel="stylesheet" href="../common/css/general.css">
+    <script src="../common/js/nav.js"></script>
+
+</head>
+
+<body>
+
+    <header dir="rtl">
+        <div class="container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="nav-menu">
+                <div class="user-profile mobile-user">
+                    <div class="avatar"></div>
+                    <div class="user-name">السيد قلم</div>
+                </div>
+                <a href="../common/home-user.html">الرئيسية</a>
+                <a href="#" class="active">الدورات</a>
+            </nav>
+            <div class="logo">Pencil</div>
+        </div>
+    </header>
+
+
+
+
+    <div class="main-container container" dir="rtl">
+        <aside class="sidebar">
+            <h2>التصفية</h2>
+        
+            <!-- تصفية حسب المستوى -->
+            <div class="filter-section">
+                <h3>المستوى</h3>
+                <label><input type="checkbox"> مبتدئ</label>
+                <label><input type="checkbox"> متوسط</label>
+                <label><input type="checkbox"> متقدم</label>
+            </div>
+        
+            <!-- تصفية حسب التقييم -->
+            <div class="filter-section">
+                <h3>التقييم</h3>
+        
+                <label><input type="radio" name="rating">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                </label>
+                <label><input type="radio" name="rating">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                </label>
+                <label><input type="radio" name="rating">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                </label>
+                <label><input type="radio" name="rating">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                </label>
+                <label><input type="radio" name="rating">
+                    <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                </label>
+            </div>
+        </aside>
+        
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- شريط البحث والفئات -->
+<div class="search-container">
+    <input type="text" placeholder="ابحث عن الدورات..." class="search-input">
+    <img src="images/search.svg" class="search-icon" alt="">
+</div>
+
+<!-- تصفية حسب الفئات (تصميم على شكل كبسولات) -->
+<div class="category-filters">
+    <span class="pill">البرمجة</span>
+    <span class="pill">التصميم</span>
+    <span class="pill">التسويق الرقمي</span>
+    <span class="pill">قواعد البيانات</span>
+</div>
+            <!-- Course Grid -->
+            <div class="course-grid">
+                <div class="course-card" onclick="location.href='course-detail.html'">
+                    <div id = "img0" class="course-image"></div>
+                    <h3>تصميم الويب</h3>
+                    <p>المُدرّس: أحمد علي</p>
+                    <div class="rating">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/half-star.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="location.href='course-detail.html'">
+                    <div id = "img1" class="course-image"></div>
+                    <h3>تطوير الواجهات الخلفية</h3>
+                    <p>المُدرّس: محمد حسن</p>
+                    <div class="rating">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/half-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="location.href='course-detail.html'">
+                    <div id = "img2" class="course-image"></div>
+                    <h3>برمجة بايثون للمبتدئين</h3>
+                    <p>المُدرّس: فاطمة الزهراء</p>
+                    <div class="rating">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/half-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="location.href='course-detail.html'">
+                    <div id = "img3" class="course-image"></div>
+                    <h3>هياكل البيانات والخوارزميات</h3>
+                    <p>المُدرّس: خالد السعدي</p>
+                    <div class="rating">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="location.href='course-detail.html'">
+                    <div id = "img4" class="course-image"></div>
+                    <h3>تطوير تطبيقات الهاتف المحمول</h3>
+                    <p>المُدرّس: ليلى الهادي</p>
+                    <div class="rating">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/half-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="location.href='course-detail.html'">
+                    <div id = "img5" class="course-image"></div>
+                    <h3>قواعد البيانات وإدارة البيانات</h3>
+                    <p>المُدرّس: ياسر الجبالي</p>
+                    <div class="rating">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/half-star.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="location.href='course-detail.html'">
+                    <div id = "img6" class="course-image"></div>
+                    <h3>الأمن السيبراني وأساسيات الحماية</h3>
+                    <p>المُدرّس: سمير القاضي</p>
+                    <div class="rating">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/half-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/empty-star.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="course-card" onclick="location.href='course-detail.html'">
+                    <div id = "img7" class="course-image"></div>
+                    <h3>الذكاء الاصطناعي وتعلم الآلة</h3>
+                    <p>المُدرّس: ندى السوسي</p>
+                    <div class="rating">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                        <img class="rating-star-icon" src="images/full-star.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+
+    <footer class="footer" dir="rtl">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>من نحن</h3>
+                    <p>منصة Pencil توفر بيئة تعليمية تفاعلية للطلاب والمعلمين.</p>
+                </div>
+
+                <div class="footer-section contact">
+                    <h3>اتصل بنا</h3>
+                    <p>البريد الإلكتروني: <a href="">info@pencil.com</a></p>
+                    <p>الهاتف: <a href="tel:+123456789">+123 456 789</a></p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>الشروط والخصوصية</h3>
+                    <ul>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section social">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

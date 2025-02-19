@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حساب الشخصي</title>
+    <link rel="stylesheet" href="student_dashboard.css">
+    <link rel="stylesheet" href="../common/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../common/css/general.css">
+<script src="../common/js/nav.js"></script>
+</head>
+<body>
+
+<header dir="rtl">
+    <div class="container">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu">
+            <div class="user-profile mobile-user">
+                <div class="avatar"></div>
+                <div class="user-name">السيد قلم</div>
+            </div>
+            <a href="../common/home-user.html">الرئيسية</a>
+            <a href="../course/courses.html">الدورات</a>
+        </nav>
+        <div class="logo">Pencil</div>
+    </div>
+</header>
+
+
+    <main class="dashboard-container">
+        
+        <!-- Profile Section -->
+        <section class="profile">
+            <img src="../common/images/pencil_guy.png" alt="Profile Picture">
+            <h2>السيد قلم</h2>
+            <button class="btn-secondary">تعديل الحساب</button>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats">
+            <div class="stat-card">
+                <h3>المشاركة الكلية</h3>
+                <pre>كورسات </pre><pre>5</pre>
+            </div>
+            <div class="stat-card">
+                <h3>المكتملة</h3>
+                <pre>كورسات </pre><pre>3</pre>
+            </div>
+            <div class="stat-card">
+                <h3>المستمرة</h3>
+                <pre>كورسات </pre><pre>2</pre>
+            </div>
+            <div class="stat-card">
+                <h3>الأيام المتتالية</h3>
+                <pre>أيام </pre><pre>7</pre>
+            </div>
+        </section>
+
+        <!-- Enrolled Courses List -->
+        <section class="courses">
+            <h2>البرامج المستمرة</h2>
+            <div class="course-list">
+                <div class="course-card">
+                    <div id = "web"  class = "card-image"></div>
+                    <h3>تطوير ويب</h3>
+                    <pre>80% :</pre><pre>التقدم</pre>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div  class="course-card">
+                    <div id = "database" class = "card-image"></div>
+                    <h3>مبادئ قواعد البيانات</h3>
+                    <pre>50% :</pre><pre>التقدم</pre>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id = "second" class="courses">
+            <h2>البرامج المكتملة</h2>
+            <div  class="course-list">
+                <div  class="course-card">
+                    <div id = "oop" class = "card-image"></div>
+                    <h3>برمجة بلغة جافا</h3>
+                    <pre>98% :</pre><pre>التقدم</pre>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 98%;"></div>
+                    </div>
+                </div>
+                <div  class="course-card">
+                    <div id = "webz" class = "card-image"></div>
+                    <h3>تصميم ويب</h3>
+                    <pre>100% :</pre><pre>التقدم</pre>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div id = "ai" class = "card-image"></div>
+                    <h3>مهارات css</h3>
+                    <pre>99% :</pre><pre>التقدم</pre>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 99%;"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+
+    <!-- Footer -->    
+    <footer class="footer" dir="rtl">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>من نحن</h3>
+                    <p>منصة Pencil توفر بيئة تعليمية تفاعلية للطلاب والمعلمين.</p>
+                </div>
+
+                <div class="footer-section contact">
+                    <h3>اتصل بنا</h3>
+                    <p>البريد الإلكتروني: <a href="">info@pencil.com</a></p>
+                    <p>الهاتف: <a href="tel:+123456789">+123 456 789</a></p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>الشروط والخصوصية</h3>
+                    <ul>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section social">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

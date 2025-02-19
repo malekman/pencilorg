@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم المعلم</title>
+    
+    <link rel="stylesheet" href="../common/css/general.css">
+    <link rel="stylesheet" href="teacher-dashboard.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../common/js/nav.js"></script>
+
+</head>
+<body>
+    <header dir="rtl">
+        <div class="container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="nav-menu">
+                <div class="user-profile mobile-user">
+                    <div class="avatar"></div>
+                    <div class="user-name">اسم المستخدم</div>
+                </div>
+                <a href="../common/home-user.html" class="active">الرئيسية</a>
+                <a href="../course/courses.html">الدورات</a>
+            </nav>
+            <div class="logo">Pencil</div>
+        </div>
+    </header>
+
+    <div class="main-container container" dir="rtl">
+        <h2>مرحبًا م. أحمد علي</h2>
+        <!-- الإحصائيات -->
+        <div class="stats">
+            <div class="stat-card">
+                <h3>5</h3>
+                <p>الدورات المنشأة</p>
+            </div>
+            <div class="stat-card">
+                <h3>20</h3>
+                <p>الدروس المضافة</p>
+            </div>
+            <div class="stat-card">
+                <h3>1,200</h3>
+                <p>الطلاب المسجلين</p>
+            </div>
+        </div>
+
+        <!-- قسم الدورات -->
+        <div class="courses">
+            <h3>دوراتي</h3>
+            <div class="course-list">
+                <div class="course-card">
+                    <img src="https://cdn.usegalileo.ai/sdxl10/2bbea72a-f1df-45e6-864d-f4956493829d.png" alt="صورة الدورة">
+                    <h4>مقدمة في بايثون</h4>
+                    <p>آخر تعديل: 10 يناير 2025</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://cdn.usegalileo.ai/sdxl10/2c711519-8a85-4b6e-a051-2df8c563d4b7.png" alt="Course Image">
+                    <h4>تصميم الويب</h4>
+                    <p>آخر تعديل: 8 يناير 2025</p>
+                </div>
+                <div class="course-card">
+                    <img src="https://cdn.usegalileo.ai/sdxl10/aaf35469-9a61-4468-b558-c07b4fda3bc7.png" alt="صورة الدورة">
+                    <h4>الجبر</h4>
+                    <p>آخر تعديل: 5 يناير 2025</p>
+                </div>
+            </div>
+            <a class="new-course-btn" href="course-edit.html">+ إنشاء دورة جديدة</a>
+        </div>
+    </div>
+        
+    <footer class="footer" dir="rtl">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>من نحن</h3>
+                    <p>منصة Pencil توفر بيئة تعليمية تفاعلية للطلاب والمعلمين.</p>
+                </div>
+
+                <div class="footer-section contact">
+                    <h3>اتصل بنا</h3>
+                    <p>البريد الإلكتروني: <a href="">info@pencil.com</a></p>
+                    <p>الهاتف: <a href="tel:+123456789">+123 456 789</a></p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>الشروط والخصوصية</h3>
+                    <ul>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section social">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

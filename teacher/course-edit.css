@@ -1,0 +1,166 @@
+body {
+    background-color: #F8F9FB;
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding-top: 30px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 6rem 2rem 2rem;
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.edit-container {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #141C24;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #D4DBE8;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #F8F9FB;
+}
+
+.thumbnail-preview {
+    width: 100%;
+    height: 200px;
+    background-color: #E4E9F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Lessons Section */
+.lessons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.lessons-list li {
+    background: white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #D4DBE8;
+}
+
+.lessons-list .edit-btn, .lessons-list .delete-btn {
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn {
+    background-color: #F4C753;
+    color: #141C24;
+}
+
+.delete-btn {
+    background-color: #D9534F;
+    color: white;
+}
+
+/* Save Button */
+.save-btn {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #141C24;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+}
+
+.modal-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E4E9F1;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.modal-header h2 {
+    font-size: 1.4rem;
+    color: #141C24;
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+.main-content {
+    width: 100%;
+    }
+}
+    

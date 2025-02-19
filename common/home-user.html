@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencil</title>
+    
+    <link rel="stylesheet" href="../common/css/general.css">
+    <link rel="stylesheet" href="css/main.css">    
+
+    <link rel="stylesheet" href="../components/footer/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="../components/nav/nav-shared.css">
+    <script src="js/nav.js"></script>
+
+</head>
+<body>
+
+    <header dir="rtl">
+        <div class="container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="nav-menu">
+                <div class="user-profile mobile-user">
+                    <div class="avatar"></div>
+                    <a class="user-name" href="../student/student-dashboard.html">السيد قلم</a>
+                </div>
+                <a href="#" class="active">الرئيسية</a>
+                <a href="../course/courses.html">الدورات</a>
+            </nav>
+            <div class="logo">Pencil</div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <div class = "hero-container">
+        <div class="hero">
+            <h1>تعلم مهارات جديدة بقوة القلم</h1>
+            <p>توفر منصتنا العديد من المميزات والبرامج التي يقدمها خيرة المعلمين </p>
+            <a href="#" class="btn-primary">تصفح البرامج</a>
+            <img src = "images/pencil.png" id = "pencil">
+        </div>
+        <div class = "hero-stuff"><img src= "images/title1.png"></div>
+    </div> 
+
+    <!-- Course Listing -->
+    <section class="courses">
+        <h2>برامجنا المشهورة</h2>
+        <h1>هنا يمكنك إيجاد برامجنا الاكثر شهرة, مع توصيات العديد من المستخدمين</h1>
+        <div class="course-container">
+            <div class="course-card">
+                <div class = "card-image"></div>
+                <h3>تطوير الويب</h3>
+                <p>تعلم تطوير الويب من البداية وحتى نشر موقعك الخاص</p>
+                <div class = "btn-container"><a href="#" class="btn-secondary">التحق بالبرنامج</a></div>
+            </div>
+            <div class="course-card">
+                <div class = "card-image"></div>
+                <h3>تصميم الويب</h3>
+                <p>تعلم اساسيات التصميم وكيف تصنع صفحات جميلة</p>
+                <div class = "btn-container"><a href="#" class="btn-secondary">التحق بالبرنامج</a></div>
+            </div>
+            <div class="course-card">
+                <div class = "card-image"></div>
+                <h3>تطوير الألعاب </h3>
+                <p>تعلم في هذا الكورس المبسط كيفية تطوير الالعاب بواسطة يونتي</p>
+                <div class = "btn-container"><a href="#" class="btn-secondary">التحق بالبرنامج</a></div>
+            </div>
+            <div class="course-card">
+                <div class = "card-image"></div>
+                <h3>مبادئ قواعد البيانات</h3>
+                <p>احترف تصميم قواعد البيانات بتعلم المبادئ, هذا الكورس يقدم جوانب علمية كذلك</p>
+                <div class = "btn-container"><a href="#" class="btn-secondary">التحق بالبرنامج</a></div>
+            </div>
+            
+        </div>
+    </section>
+    <section id = "second" class="courses">
+        <h2>البرامج الجديدة</h2>
+        <h1>احدث البرامج المتوفرة كن سباقاً وتعلم قبل الجميع </h1>
+        <div class="course-container">
+            <div class="course-card">
+                <div class = "card-image"></div>
+                <h3>تطوير الويب</h3>
+                <p>تعلم تطوير الويب من البداية وحتى نشر موقعك الخاص</p>
+                <div class = "btn-container"><a href="#" class="btn-secondary">التحق بالبرنامج</a></div>
+            </div>
+            <div class="course-card">
+                <div class = "card-image"></div>
+                <h3>تصميم الويب</h3>
+                <p>تعلم اساسيات التصميم وكيف تصنع صفحات جميلة</p>
+                <div class = "btn-container"><a href="#" class="btn-secondary">التحق بالبرنامج</a></div>
+            </div>
+            <div class="course-card">
+                <div class = "card-image"></div>
+                <h3>تطوير الألعاب </h3>
+                <p>تعلم في هذا الكورس المبسط كيفية تطوير الالعاب بواسطة يونتي</p>
+                <div class = "btn-container"><a href="#" class="btn-secondary">التحق بالبرنامج</a></div>
+            </div>
+            <div class="course-card">
+                <div class = "card-image"></div>
+                <h3>مبادئ قواعد البيانات</h3>
+                <p>احترف تصميم قواعد البيانات بتعلم المبادئ, هذا الكورس يقدم جوانب علمية كذلك</p>
+                <div class = "btn-container"><a href="#" class="btn-secondary">التحق بالبرنامج</a></div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+
+    <section id = "fourth" class="courses">
+        <div class="course-container">
+
+            <div class = "teacher-section">
+                <h2>سهولة الوصول للمعلمين</h2>
+                <h1>نوفر افضل خدمة ممكنة للمعلمين للأننا نعلم أنهم هم اصحاب القلم</h1>
+                <div class = "btn-box"  style="width: 150px;"><a href="../teacher/teacher-dashboard.html" class="btn-primary" style="width: 100px;">صفحة المعلمين</a></div>
+            </div>
+            <div class = "teacher-section2"></div>
+        </div>
+    </section>  
+    
+<footer class="footer" dir="rtl">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>من نحن</h3>
+                <p>منصة Pencil توفر بيئة تعليمية تفاعلية للطلاب والمعلمين.</p>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>اتصل بنا</h3>
+                <p>البريد الإلكتروني: <a href="">info@pencil.com</a></p>
+                <p>الهاتف: <a href="tel:+123456789">+123 456 789</a></p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>الشروط والخصوصية</h3>
+                <ul>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

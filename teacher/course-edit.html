@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعديل الدورة</title>
+    
+
+    <link rel="stylesheet" href="../common/css/general.css">
+    <link rel="stylesheet" href="course-edit.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../common/js/nav.js"></script>
+
+</head>
+<body>
+
+    <header dir="rtl">
+        <div class="container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="nav-menu">
+                <div class="user-profile mobile-user">
+                    <div class="avatar"></div>
+                    <a class="user-name" href="../student/teacher-dashboard.html">اسم المستخدم</div>
+                </div>
+                <a href="#" class="active">الرئيسية</a>
+                <a href="#">الدورات</a>
+            </nav>
+            <div class="logo">Pencil</div>
+        </div>
+    </header>
+<!-- Main Content -->
+<div class="main-content" dir="rtl">
+    <div class="edit-container">
+        <h2>تعديل الدورة</h2>
+
+        <!-- Course Details -->
+        <div class="form-group">
+            <label for="course-title">عنوان الدورة</label>
+            <input type="text" id="course-title" placeholder="أدخل عنوان الدورة">
+        </div>
+
+        <div class="form-group">
+            <label for="course-description">وصف الدورة</label>
+            <textarea id="course-description" rows="4" placeholder="أدخل وصف الدورة"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="course-thumbnail">صورة الدورة</label>
+            <div class="thumbnail-preview">معاينة الصورة</div>
+            <input type="file" id="course-thumbnail">
+        </div>
+
+        <div class="form-group">
+            <label for="course-category">فئة الدورة</label>
+            <select id="course-category">
+                <option value="">اختر فئة</option>
+                <option value="programming">البرمجة</option>
+                <option value="math">الرياضيات</option>
+                <option value="science">العلوم</option>
+            </select>
+        </div>
+
+        <!-- Lessons Section -->
+        <h2>الدروس</h2>
+        <ul class="lessons-list">
+            <li>
+                <span>الدرس 1: المقدمة</span>
+                <div>
+                    <button class="edit-btn" onclick="openModal()">تعديل</button>
+                    <button class="delete-btn">حذف</button>
+                </div>
+            </li>
+            <li>
+                <span>الدرس 2: البدء</span>
+                <div>
+                    <button class="edit-btn" onclick="openModal()">تعديل</button>
+                    <button class="delete-btn">حذف</button>
+                </div>
+            </li>
+            <li>
+                <span>الدرس 3: مفاهيم متقدمة</span>
+                <div>
+                    <button class="edit-btn" onclick="openModal()">تعديل</button>
+                    <button class="delete-btn">حذف</button>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Save Button -->
+        <a class="save-btn" href="teacher-dashboard.html">حفظ التغييرات</a>
+    </div>
+
+    <!-- Lesson Edit Modal -->
+    <div class="modal-overlay" id="lessonModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>تعديل الدرس</h2>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+
+            <div class="form-group">
+                <label>عنوان الدرس</label>
+                <input type="text" id="lesson-title" placeholder="أدخل عنوان الدرس">
+            </div>
+
+            <div class="form-group">
+                <label>محتوى الدرس</label>
+                <textarea id="lesson-text" rows="4" placeholder="أدخل محتوى الدرس"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>رفع فيديو</label>
+                <input type="file">
+            </div>
+
+            <div class="form-group">
+                <label>رفع مرفقات</label>
+                <input type="file" multiple>
+            </div>
+
+            <button class="save-btn">حفظ التغييرات</button>
+        </div>
+    </div>
+</div>
+
+    
+<footer class="footer" dir="rtl">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>من نحن</h3>
+                <p>منصة Pencil توفر بيئة تعليمية تفاعلية للطلاب والمعلمين.</p>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>اتصل بنا</h3>
+                <p>البريد الإلكتروني: <a href="">info@pencil.com</a></p>
+                <p>الهاتف: <a href="tel:+123456789">+123 456 789</a></p>
+            </div>
+
+            <div class="footer-section links">
+                <h3>الشروط والخصوصية</h3>
+                <ul>
+                    <li><a href="#">سياسة الخصوصية</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h3>تابعنا</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    <!-- JavaScript -->
+    <script>
+        function openModal() {
+            document.getElementById("lessonModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("lessonModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

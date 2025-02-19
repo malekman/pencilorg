@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Left Side (Info + Image) -->
+        <div class="login-img">
+            <div class="login-info">
+                <h1>مرحبًا بك في Pencil</h1>
+                <p>تعلم، استكشف، وطور معرفتك من خلال الدروس التفاعلية.</p>
+            </div>
+        </div>
+
+        <!-- Right Side (Login Form) -->
+        <div class="login-form">
+            <h2>تسجيل الدخول إلى حسابك</h2>
+            <form id="login-form">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني">
+
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" placeholder="أدخل كلمة المرور">
+
+                <!-- User Type Selection -->
+                <label class="radio-title">نوع المستخدم:</label>
+                <div class="user-type">
+                    <label>
+                        <input type="radio" name="userType" value="student" checked>
+                        طالب
+                    </label>
+                    <label>
+                        <input type="radio" name="userType" value="teacher">
+                        معلم
+                    </label>
+                </div>
+                
+
+                <button type="submit" class="btn-primary">متابعة</button>
+            </form>
+
+            <p class="login-footer">ليس لديك حساب؟ <a href="signup.html">إنشاء حساب</a></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual submission
+
+            let userType = document.querySelector('input[name="userType"]:checked').value;
+
+            // Redirect based on user type
+            if (userType === "student") {
+                window.location.href = "../student/student-dashboard.html"; // Change this path as needed
+            } else {
+                window.location.href = "../teacher/teacher-dashboard.html"; // Change this path as needed
+            }
+        });
+    </script>
+
+</body>
+</html>

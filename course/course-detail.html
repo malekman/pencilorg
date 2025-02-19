@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدرس 1: مقدمة في تصميم الويب</title>
+    <link rel="stylesheet" href="course-detail.css">
+
+    <link rel="stylesheet" href="../common/css/general.css">
+    <script src="../common/js/nav.js"></script>
+
+</head>
+<body>
+
+    <header dir="rtl">
+        <div class="container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <nav id="nav-menu">
+                <div class="user-profile mobile-user">
+                    <div class="avatar"></div>
+                    <div class="user-name">السيد قلم</div>
+                </div>
+                <a href="../common/home-user.html">الرئيسية</a>
+                <a href="../course/courses.html" class="active">الدورات</a>
+            </nav>
+            <div class="logo">Pencil</div>
+        </div>
+    </header>
+
+    <div class="course-container" dir="rtl">
+        <!-- Sidebar (Course Content) -->
+        <aside class="lesson-sidebar">
+            <h3>محتوى الدورة</h3>
+            <ul class="lesson-list">
+                <li><a href="#" class="active">الدرس 1: مقدمة</a></li>
+                <li><a href="lesson2.html">الدرس 2: أساسيات HTML</a></li>
+                <li><a href="lesson2.html">الدرس 3: مبادئ CSS</a></li>
+                <li><a href="lesson2.html">الدرس 4: التصميم المتجاوب</a></li>
+                <li><a href="lesson2.html">الدرس 5: المشروع النهائي</a></li>
+            </ul>
+        </aside>
+    
+        <!-- Main Content -->
+        <main class="lesson-content">
+            <h2>الدرس 1: مقدمة في تصميم الويب</h2>
+            <div class="video-container">
+                <div class="video-iframe">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_-eh8cwGGwg?si=Tcw2kcQrsNNuAn8H"
+                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p>مرحبًا بك في الدرس الأول من تصميم الويب! في هذا الدرس، سنتعرف على المبادئ الأساسية لتصميم المواقع الحديثة، بما في ذلك الهيكل، الجماليات، وسهولة الاستخدام.</p>
+    
+            <div class="lesson-navigation">
+                <button disabled>الدرس السابق</button>
+                <button onclick="location.href='lesson2.html'">الدرس التالي</button>
+            </div>
+        </main>
+    </div>
+    
+
+    
+    <footer class="footer" dir="rtl">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>من نحن</h3>
+                    <p>منصة Pencil توفر بيئة تعليمية تفاعلية للطلاب والمعلمين.</p>
+                </div>
+
+                <div class="footer-section contact">
+                    <h3>اتصل بنا</h3>
+                    <p>البريد الإلكتروني: <a href="">info@pencil.com</a></p>
+                    <p>الهاتف: <a href="tel:+123456789">+123 456 789</a></p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>الشروط والخصوصية</h3>
+                    <ul>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section social">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

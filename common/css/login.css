@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+:root {
+    --primary-bg: #ecedeb;
+    --primary-bg-hover: #c9cac8;
+    --navbar-bg: #2A363B;
+    --text-color: #222222;
+    --card-bg: #ffffff;
+    --border-color: #9a9a9a;
+    --accent-color: #F5D061;
+    --input-bg: #f5f5f5;
+    --input-hover-bg: #ebebeb;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--primary-bg);
+    text-align: right;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    width: 900px;
+    /* height: 500px; */
+    padding: 0 30px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    overflow: hidden;
+}
+
+/* Left Side (Info + Image) */
+.login-img {
+    flex: 1;
+    background-image: url("/Images/pencil-login.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-info {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.login-info p {
+    font-size: 16px;
+}
+
+/* Right Side (Login Form) */
+.login-form {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-form h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+.login-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: var(--input-bg);
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-form input:hover, .login-form input:focus {
+    background: var(--input-hover-bg);
+    border-color: var(--accent-color);
+    outline: none;
+}
+/* User Type Selection */
+.user-type {
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Spacing between label and options */
+}
+
+.user-type label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between radio button and text */
+    cursor: pointer;
+}
+
+/* Custom Radio Buttons */
+.user-type input {
+    appearance: none; /* Hide default radio */
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.user-type input:checked {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+.user-type input:checked::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Login Button */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: var(--primary-bg-hover);
+}
+
+/* Footer Link */
+.login-footer {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-footer a {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .login-img {
+        height: 200px;
+    }
+
+    .login-info {
+        padding: 15px;
+    }
+
+    .login-form {
+        padding: 30px;
+    }
+}
